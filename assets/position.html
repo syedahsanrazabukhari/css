@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative {
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 30px;
+            left: 10px;
+        }
+
+        .absolute {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .rel {
+            position: relative;
+            background-color: purple;
+            height: 200px;
+            width: 200px;
+        }
+
+        .abs {
+            position: absolute;
+            bottom: 0;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative"></div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias aliquid laboriosam esse minima, veniam
+        earum odio illum ratione et, dignissimos repudiandae iste, blanditiis obcaecati officia quis praesentium.
+        Reiciendis, voluptate!</div>
+
+
+    <!-- absolute -->
+    <div class="absolute">Absolute</div>
+
+
+    <div class="rel">
+        <div class="abs"></div>
+    </div>
+</body>
+
+</html>
