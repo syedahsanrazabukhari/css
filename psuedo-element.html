@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            background-color: yellow;
+        }
+
+        p::first-letter {
+            font-weight: 900;
+            font-size: 25px;
+        }
+
+        span {
+            position: relative;
+        }
+
+        span::before {
+            content: '';
+            height: 7px;
+            width: 7px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        li::marker {
+            color: red;
+            font-size: 20px;
+        }
+
+        p::selection {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis vel vitae omnis perferendis, officiis
+        tempora molestiae eius! Recusandae iste aperiam, laudantium nesciunt deserunt sit veniam labore, doloribus rerum
+        accusamus tempore!</p>
+    <span>Hello</span>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+
+</html>
