@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 0;
+        }
+
+        span {
+            background: #444444;
+            color: white;
+            padding: 6px 10px;
+            position: relative;
+            top: 16px;
+            display: none;
+        }
+
+        span::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 40%;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 6px solid #444444;
+        }
+
+        div:hover span {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>consectetu.</p>
+        <span>This is tooltip info</span>
+    </div>
+</body>
+
+</html>
